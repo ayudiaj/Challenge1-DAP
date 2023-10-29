@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log In</title>
+
+  <link href="style.css" rel="stylesheet">
+
+  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css ">
+  <link href="https://fonts.googleapis.com/css?family=Inter " rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Poppins:wght@300;500&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@500;800&family=Josefin+Sans:wght@700&family=Poppins:wght@300;500&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="login-page">
+  <div class="container">
+    <div class="formulir">
+      <div class="logo">
+        <img src="Assets/Logo.png" alt="" />
+        <h3>TRAVELEEN</h3>
+      </div>
+      <div class="header">
+        <h1>Masuk</h1>
+        <h3>ADISTY NINGRUM DERMAWATI</h3>
+      </div>
+      <form class="login">
+        <label for="username">Username atau Email</label>
+        <div class="input-container">
+          <input class="input-field" type="text" id="username" name="username" placeholder="arthurmorgan@gmail.com">
+        </div>
+
+        <label for="password">Kata Sandi</label>
+        <div class="input-container">
+          <input class="input-field" id="password" type="password" placeholder="Password" name="psw">
+          <i class="fa-solid fa-eye icon" id="eye"></i>
+        </div>
+
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <span class="form-check-label" for="exampleCheck1">Ingat Saya</span>
+          <span class="lupa">Lupa Kata Sandi</span>
+        </div>
+
+        <div class="input-container">
+          <input class="input-field btn-masuk" type="submit" id="Masuk" value="Masuk" />
+        </div>
+        <div class="daftar">
+          <p class="p-masuk">Tidak Punya Akun? <a href="register.html">Daftar</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="index.js"></script>
+  <script>
+    // JavaScript untuk menampilkan pesan setelah tombol "Masuk" diklik
+    const masukButton = document.getElementById("Masuk");
+
+    masukButton.addEventListener("click", function () {
+      alert("Anda berhasil login");
+    });
+  </script>
+</body>
+
+</html>
