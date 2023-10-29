@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Inter " rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Poppins:wght@300;500&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@500;800&family=Josefin+Sans:wght@700&family=Poppins:wght@300;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body class="register-page">
+  <div class="container">
+    <div class="formulir">
+      <div class="logo">
+        <img src="Assets/Logo.png" alt="" />
+        <h3>TRAVELEEN</h3>
+      </div>
+      <div class="header">
+        <h1>Daftar</h1>
+        <h3>AYUDIA JAYANTI</h3>
+      </div>
+      <form>
+        <label for="username">Username</label><br />
+        <div class="input-container">
+          <input class="input-field" type="text" id="username" name="username" placeholder="arthurmorgan">
+        </div>
+        <label for="email">Email</label><br />
+        <div class="input-container">
+          <input class="input-field" type="email" id="email" name="email" placeholder="arthurmorgan@gmail.com">
+        </div>
+
+        <label for="password">Kata Sandi</label><br />
+        <div class="input-container">
+          <input class="input-field" id="password" type="password" placeholder="Password" name="psw">
+          <i class="fa-solid fa-eye icon" id="eye"></i>
+        </div>
+        <p class="keterangan-password">
+          Pakai kata sandi minimal 6 karakter dan bedakan dengan kata sandi
+          akun media sosial atau website lain.
+        </p>
+
+        <label for="confirm-password">Konfirmasi Kata Sandi</label><br />
+        <div class="input-container">
+          <input class="input-field" id="confirm-password" type="password" placeholder="Password" name="psw">
+          <i class="fa-solid fa-eye icon" id="confirm-eye"></i>
+        </div>
+
+        <p class="keterangan-setuju">
+          Dengan mengklik Daftar, kamu menyetujui Ketentuan, Kebijakan Privasi,
+          dan Kebijakan Cookie kami. Kami dapat mengirimkan pemberitahuan SMS
+          yang dapat dihentikan kapan saja.
+        </p>
+        <div class="input-container">
+          <input class="input-field btn-masuk" type="submit" id="Daftar" value="Daftar" />
+        </div>
+
+        <p class="p-masuk">Sudah punya akun? <a href="login.html">Masuk</a></p>
+      </form>
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+  <script>
+    const registButton = document.getElementById("Daftar");
+
+    registButton.addEventListener("click", function () {
+      alert("Anda berhasil mendaftar");
+    });
+  </script>
+</body>
+
+</html>
